@@ -1,9 +1,9 @@
 {
   "name": "find-dom-node-polyfill",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ReactDom findDOMNode polyfill",
-  "main": "dist/main.js",
-  "module": "dist/main.mjs",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
@@ -28,11 +28,11 @@
     ".": {
       "import": {
         "types": "./dist/index.d.ts",
-        "default": "./dist/main.mjs"
+        "default": "./dist/index.mjs"
       },
       "require": {
         "types": "./dist/index.d.ts",
-        "default": "./dist/main.js"
+        "default": "./dist/index.js"
       }
     }
   },
