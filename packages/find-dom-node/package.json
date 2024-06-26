@@ -1,8 +1,10 @@
 {
   "name": "find-dom-node-polyfill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ReactDom findDOMNode polyfill",
-  "main": "index.js",
+  "main": "dist/main.js",
+  "module": "dist/main.mjs",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/childrentime/find-dom-node-polyfill.git",
@@ -11,6 +13,9 @@
   "bugs": {
     "url": "https://github.com/childrentime/find-dom-node-polyfill/issues"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
