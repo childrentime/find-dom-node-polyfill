@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`findDOMNode > findDOMNode should warn if passed a component that is inside StrictMode 1`] = `
+[
+  [
+    "Warning: %s is deprecated in StrictMode. %s was passed an instance of %s which is inside StrictMode. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s",
+    "findDOMNode",
+    "findDOMNode",
+    "IsInStrictMode",
+    "
+    at div
+    at IsInStrictMode (/Users/zhangyuanqing/works/github/find-dom-node-polyfill/packages/find-dom-node/__test__/index.spec.tsx:102:5)",
+  ],
+]
+`;
+
+exports[`findDOMNode > findDOMNode should warn if used to find a host component inside StrictMode 1`] = `
+[
+  [
+    "Warning: %s is deprecated in StrictMode. %s was passed an instance of %s which renders StrictMode children. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s",
+    "findDOMNode",
+    "findDOMNode",
+    "ContainsStrictModeChild",
+    "
+    at div
+    at ContainsStrictModeChild (/Users/zhangyuanqing/works/github/find-dom-node-polyfill/packages/find-dom-node/__test__/index.spec.tsx:84:5)",
+  ],
+]
+`;

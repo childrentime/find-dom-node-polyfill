@@ -1,0 +1,20 @@
+{
+  "name": "find-dom-node-polyfill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@jsdevtools/version-bump-prompt": "^6.1.0",
+    "consola": "^3.2.3",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.1.0",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
+  }
+}

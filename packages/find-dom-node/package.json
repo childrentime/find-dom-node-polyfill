@@ -1,0 +1,41 @@
+{
+  "name": "find-dom-node-polyfill",
+  "version": "1.0.0",
+  "description": "ReactDom findDOMNode polyfill",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest",
+    "release:prepare": "bump",
+    "publish:ci": "tsx scripts/publish.ts"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/main.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/main.js"
+      }
+    }
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "keywords": [],
+  "author": "childrentime",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "jsdom": "^24.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vitest": "^1.6.0"
+  }
+}
